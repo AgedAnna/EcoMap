@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/*Fundo Gradiente*/
+body{
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(64, 30, 233));
+    background-size: 400% 400%;
+    animation: anim 5.5s infinite ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+/*Fundo Gradiente*/
+
+@keyframes anim {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: #100546a3;
+    height: 10vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.fa-solid fa-bars{
+    cursor: pointer;
+    background: #a8e40f;
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 4px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+ul:hover li a{
+    color: #40f430;
+}
+
+ul:hover li a:not(:hover) {
+    color: #ffff;
+    opacity: 0.3;
+    filter: blur(1px);
+}
